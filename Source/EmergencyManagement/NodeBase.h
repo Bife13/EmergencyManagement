@@ -39,13 +39,11 @@ public:
 	FString Description;
 	UPROPERTY(BlueprintReadWrite)
 	FColor Color;
-
+	UPROPERTY(BlueprintReadWrite)
+	FVector2D CanvasOffset;
 	// TODO ACTUAL NODE VARIABLES LATER
 
 	// Type
 	// Stress
 	// Location
 };
-
-
-
