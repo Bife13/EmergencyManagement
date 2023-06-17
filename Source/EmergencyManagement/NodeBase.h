@@ -27,23 +27,27 @@ class EMERGENCYMANAGEMENT_API UNodeBase : public UUserWidget
 	GENERATED_BODY()
 
 public:
+	//Old Variables
 	UPROPERTY(BlueprintReadWrite)
 	UNodeBase* InputNode;
 	UPROPERTY(BlueprintReadWrite)
 	UNodeBase* OutputNode;
 	UPROPERTY(BlueprintReadWrite)
 	FNodeConnection Connection;
-	UPROPERTY(BlueprintReadWrite)
-	FString Name;
+
 	UPROPERTY(BlueprintReadWrite)
 	FString Description;
-	UPROPERTY(BlueprintReadWrite)
-	FColor Color;
+	
 	UPROPERTY(BlueprintReadWrite)
 	FVector2D CanvasOffset;
-	// TODO ACTUAL NODE VARIABLES LATER
+	
+	//New Variables
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "NodeBase")
+	FString Name;
 
-	// Type
-	// Stress
-	// Location
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "NodeBase")
+	FColor Color;
+
+
 };
