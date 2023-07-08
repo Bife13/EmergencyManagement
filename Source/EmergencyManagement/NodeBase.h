@@ -18,7 +18,7 @@ struct FNodeConnection
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input Node")
 	class UNodeBase* InputNode;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Output Node")
-	class UNodeBase* OutputNode;
+	UNodeBase* OutputNode;
 };
 
 UCLASS()
